@@ -27,7 +27,7 @@ export const registration = async (req,res) => {
         sameSite: "Strict",
         maxAge: 7 * 24 * 60 * 60 * 1000
     })
-    return res.status(201).json(user)
+    return res.status(201).json(`user register successfully ${user}`)
   } catch (error) {
     console.log("registration error")
     return res.status(500).json({message:`registration error ${error}`})
@@ -54,7 +54,7 @@ export const login = async (req,res) => {
         sameSite: "Strict",
         maxAge: 7 * 24 * 60 * 60 * 1000
     })
-    return res.status(201).json(user)
+    return res.status(201).json(`user login successfully ${user}`)
 
     } catch (error) {
          console.log("login error")
