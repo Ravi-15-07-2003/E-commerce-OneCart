@@ -3,12 +3,10 @@ import { Navigate, Route, Routes, useLocation } from 'react-router-dom'
 import Registration from './pages/Registration'
 import Home from './pages/Home'
 import Login from './pages/Login'
-import Nav from './component/Nav'
 import { userDataContext } from './context/UserContext'
-import { ToastContainer } from 'react-toastify';
 function App() {
 let {userData} = useContext(userDataContext)
-let location = useLocation()
+
   
   return (
     <>
