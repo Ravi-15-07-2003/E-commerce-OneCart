@@ -9,3 +9,4 @@ node_modules/
 # Assets (images, gifs, large files)
 frontend/src/assets/
 backend/src/assets/
+admin/src/assets/
