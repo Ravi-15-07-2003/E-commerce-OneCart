@@ -6,7 +6,7 @@ import Login from './pages/Login'
 import { userDataContext } from './context/UserContext'
 function App() {
 let {userData} = useContext(userDataContext)
-
+let location = useLocation()
   
   return (
     <>

@@ -8,8 +8,12 @@ import AuthContext from './context/authContext.jsx'
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
   <AuthContext>
+    <UserContext>
+      <ShopContext>
     <App />
-  </AuthContext>
+    </ShopContext>
+    </UserContext>
+    </AuthContext>
 </BrowserRouter>
   
 )
