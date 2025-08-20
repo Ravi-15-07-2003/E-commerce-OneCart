@@ -22,6 +22,7 @@ app.use(cors({
 app.use("/api/auth",authRoutes)
 app.use("/api/user",userRoutes)
 app.use("/api/product",productRoutes)
+app.use("/api/cart",cartRoutes)
 
 
 app.listen(port,()=>{
